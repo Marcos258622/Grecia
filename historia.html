@@ -5,11 +5,13 @@
   <title>História da Grécia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     body {
       scroll-behavior: smooth;
+      padding-top: 70px; /* evita navbar cobrir conteúdo */
     }
 
     .hero {
@@ -20,12 +22,6 @@
       justify-content: center;
       color: white;
     }
-    .hero {
-  background: url('img/grecia.jpg') no-repeat center/cover;
-    }
-    .overlay {
-  background: rgba(0,0,0,0.7);
-}
 
     .overlay {
       background: rgba(0,0,0,0.6);
@@ -48,21 +44,42 @@
 
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">Grécia</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#sobre">Sobre</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="historia.html">História</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="deuses.html">deuses</a>
+        </li>
+
+     
+      </ul>
+    </div>
   </div>
 </nav>
 
-<!-- Hero -->
+<!-- HERO -->
 <section class="hero">
-  <div class="overlay">
+  <div class="overlay text-center">
     <h1>História da Grécia</h1>
   </div>
 </section>
 
-<!-- Introdução -->
+<!-- INTRODUÇÃO -->
 <section class="container py-5">
   <h2 class="section-title">Introdução</h2>
   <p>
@@ -72,14 +89,13 @@
   </p>
 </section>
 
-<!-- Guerras -->
+<!-- GUERRAS -->
 <section class="bg-light py-5">
   <div class="container">
     <h2 class="section-title">Principais Guerras</h2>
 
     <div class="row g-4">
 
-      <!-- Guerra 1 -->
       <div class="col-md-6">
         <div class="card shadow">
           <img src="img/maratona.jpg" class="card-img-top">
@@ -87,49 +103,42 @@
             <h5>Guerras Médicas (499–449 a.C.)</h5>
             <p>
               Conflito entre gregos e persas. A Batalha de Maratona foi uma grande vitória grega.
-              Já em Termópilas, 300 espartanos resistiram heroicamente contra um exército muito maior.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Guerra 2 -->
       <div class="col-md-6">
         <div class="card shadow">
           <img src="img/termopilas.jpg" class="card-img-top">
           <div class="card-body">
             <h5>Batalha de Termópilas</h5>
             <p>
-              Liderados pelo rei Leônidas, os espartanos enfrentaram os persas em uma batalha histórica.
-              Apesar da derrota, tornou-se símbolo de coragem e sacrifício.
+              Os espartanos enfrentaram os persas em uma batalha histórica.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Guerra 3 -->
       <div class="col-md-6">
         <div class="card shadow">
           <img src="img/peloponeso.jpg" class="card-img-top">
           <div class="card-body">
-            <h5>Guerra do Peloponeso (431–404 a.C.)</h5>
+            <h5>Guerra do Peloponeso</h5>
             <p>
-              Conflito entre Atenas e Esparta. Durou quase 30 anos e terminou com a vitória de Esparta,
-              enfraquecendo toda a Grécia.
+              Conflito entre Atenas e Esparta que enfraqueceu a Grécia.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Guerra 4 -->
       <div class="col-md-6">
         <div class="card shadow">
           <img src="img/alexandre.jpg" class="card-img-top">
           <div class="card-body">
-            <h5>Império de Alexandre, o Grande</h5>
+            <h5>Alexandre, o Grande</h5>
             <p>
-              Alexandre conquistou territórios do Egito até a Índia, espalhando a cultura grega
-              e criando um dos maiores impérios da história.
+              Expandiu o império grego por vários territórios.
             </p>
           </div>
         </div>
@@ -139,30 +148,31 @@
   </div>
 </section>
 
-<!-- Idade de Ouro -->
+<!-- IDADE DE OURO -->
 <section class="container py-5">
   <h2 class="section-title">Idade de Ouro de Atenas</h2>
   <p>
-    Durante o século V a.C., Atenas tornou-se o centro cultural da Grécia. Surgiram grandes
-    pensadores como Sócrates, Platão e Aristóteles, além do desenvolvimento da democracia.
+    Atenas tornou-se o centro cultural da Grécia, com grandes filósofos e o surgimento da democracia.
   </p>
 </section>
 
-<!-- Influência -->
+<!-- INFLUÊNCIA -->
 <section class="bg-light py-5">
   <div class="container">
     <h2 class="section-title">Influência no Mundo Atual</h2>
     <p>
-      A Grécia influenciou a política moderna, a filosofia, o teatro e até os esportes.
-      Os Jogos Olímpicos, por exemplo, nasceram na Grécia Antiga.
+      A Grécia influenciou política, filosofia, teatro e esportes. Os Jogos Olímpicos surgiram lá.
     </p>
   </div>
 </section>
 
-<!-- Footer -->
+<!-- FOOTER -->
 <footer class="bg-primary text-white text-center py-3">
-  <p>História da Grécia</p>
+  <p>História da Grécia © 2026</p>
 </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
