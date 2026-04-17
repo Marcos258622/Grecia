@@ -10,6 +10,7 @@
   <style>
     body {
       background: #f8f9fa;
+      padding-top: 70px; /* espaço por causa da navbar fixa */
     }
 
     .hero {
@@ -57,16 +58,40 @@
 
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<!-- NAVBAR CORRIGIDA -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html">Grécia</a>
+    <a class="navbar-brand fw-bold" href="#">Europa</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Deuses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="turismo.html">Turismo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="historia.html">História</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pratos.html">Pratos</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 
 <!-- Hero -->
 <section class="hero">
-  <div class="overlay">
+  <div class="overlay text-center">
     <h1>Deuses do Olimpo</h1>
     <p>A mitologia grega e seus poderosos deuses</p>
   </div>
@@ -78,7 +103,6 @@
 
   <div class="row g-4">
 
-    <!-- Zeus -->
     <div class="col-md-4">
       <div class="card shadow">
         <img src="img/zeus.jpg">
@@ -89,7 +113,6 @@
       </div>
     </div>
 
-    <!-- Poseidon -->
     <div class="col-md-4">
       <div class="card shadow">
         <img src="img/poseidon.jpg">
@@ -100,7 +123,6 @@
       </div>
     </div>
 
-    <!-- Hades -->
     <div class="col-md-4">
       <div class="card shadow">
         <img src="img/hades.jpeg">
@@ -111,7 +133,6 @@
       </div>
     </div>
 
-    <!-- Atena -->
     <div class="col-md-4">
       <div class="card shadow">
         <img src="img/atena.jpg">
@@ -122,7 +143,6 @@
       </div>
     </div>
 
-    <!-- Ares -->
     <div class="col-md-4">
       <div class="card shadow">
         <img src="img/ares.jpg">
@@ -133,7 +153,6 @@
       </div>
     </div>
 
-    <!-- Afrodite -->
     <div class="col-md-4">
       <div class="card shadow">
         <img src="img/afrodite.jpg">
@@ -151,6 +170,8 @@
 <footer class="bg-primary text-white text-center py-3">
   <p>Mitologia Grega - Trabalho Acadêmico</p>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

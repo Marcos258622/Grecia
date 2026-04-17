@@ -16,6 +16,7 @@
 
     .hero {
       background: url('img/europa.jpg') no-repeat center/cover;
+      image-rendering: auto;
       height: 60vh;
       display: flex;
       align-items: center;
@@ -46,8 +47,9 @@
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">Europa</a>
+  <div class="container-fluid px-5">
+
+    <a class="navbar-brand" href="index.html">Europa</a>
 
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
@@ -55,17 +57,27 @@
 
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav ms-auto">
+
         <li class="nav-item">
-          <a class="nav-link" href="#grecia">Grécia Atual</a>
+          <a class="nav-link" href="index.html">Início</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="#roma">Roma Atual</a>
+          <a class="nav-link" href="deuses.html">Deuses</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="turismo.html">Turismo</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="historia.html">História</a>
+        </li>
+
+   
+
       </ul>
     </div>
-  </div>
-</nav>
-
 <!-- HERO -->
 <section class="hero">
   <div class="overlay text-center">
@@ -91,7 +103,7 @@
 
       <div class="col-md-4">
         <div class="card shadow">
-          <img src="img/atenas.jpg" class="card-img-top">
+          <img src="img/atenas.png" class="card-img-top">
           <div class="card-body">
             <h5>Atenas</h5>
             <p>Capital da Grécia, mistura história antiga com vida urbana moderna.</p>
@@ -101,7 +113,7 @@
 
       <div class="col-md-4">
         <div class="card shadow">
-          <img src="img/santorini.jpg" class="card-img-top">
+          <img src="img/sartorini.jpg" class="card-img-top">
           <div class="card-body">
             <h5>Santorini</h5>
             <p>Uma das ilhas mais famosas do mundo, conhecida pelo turismo.</p>
@@ -111,7 +123,7 @@
 
       <div class="col-md-4">
         <div class="card shadow">
-          <img src="img/cultura.jpg" class="card-img-top">
+          <img src="img/cultura.webp" class="card-img-top">
           <div class="card-body">
             <h5>Cultura</h5>
             <p>A Grécia preserva tradições antigas na música, dança e gastronomia.</p>
@@ -160,7 +172,7 @@
 
       <div class="col-md-4">
         <div class="card shadow">
-          <img src="img/roma-moderna.jpg" class="card-img-top">
+          <img src="img/vida-moderna.jpg" class="card-img-top">
           <div class="card-body">
             <h5>Vida Moderna</h5>
             <p>Roma combina história com comércio, turismo e gastronomia.</p>

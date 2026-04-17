@@ -13,8 +13,33 @@
       padding-top: 70px;
     }
 
+    /* NAVBAR AJUSTADA */
+    .navbar {
+      padding: 15px 0;
+    }
+
+    .navbar-brand {
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    .nav-link {
+      color: rgba(255,255,255,0.8) !important;
+      margin-left: 15px;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      color: white !important;
+    }
+
+    .nav-link.active {
+      color: white !important;
+      font-weight: 500;
+    }
+
     .hero {
-      background: url('img/comida.jpg') no-repeat center/cover;
+      background: url('img/comidas.jpg') no-repeat center/cover;
       height: 60vh;
       display: flex;
       align-items: center;
@@ -45,7 +70,8 @@
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-  <div class="container">
+  <div class="container-fluid px-5">
+
     <a class="navbar-brand" href="index.html">Europa</a>
 
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -54,14 +80,28 @@
 
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav ms-auto">
+
         <li class="nav-item">
           <a class="nav-link" href="index.html">Início</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link active" href="#">Pratos Típicos</a>
+          <a class="nav-link" href="deuses.html">Deuses</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="turismo.html">Turismo</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="historia.html">História</a>
+        </li>
+
+   
+
       </ul>
     </div>
+
   </div>
 </nav>
 
@@ -81,7 +121,7 @@
 
     <div class="col-md-4">
       <div class="card shadow">
-        <img src="img/moussaka.jpg" class="card-img-top">
+        <img src="img/Moussaka.webp" class="card-img-top">
         <div class="card-body">
           <h5>Moussaka</h5>
           <p>Prato feito com berinjela, carne moída e molho branco.</p>
@@ -91,7 +131,7 @@
 
     <div class="col-md-4">
       <div class="card shadow">
-        <img src="img/souvlaki.jpg" class="card-img-top">
+        <img src="img/Souvlaki.jpg" class="card-img-top">
         <div class="card-body">
           <h5>Souvlaki</h5>
           <p>Espetinhos de carne grelhada, muito populares no país.</p>
@@ -101,7 +141,7 @@
 
     <div class="col-md-4">
       <div class="card shadow">
-        <img src="img/greek-salad.jpg" class="card-img-top">
+        <img src="img/Salada Grega.avif" class="card-img-top">
         <div class="card-body">
           <h5>Salada Grega</h5>
           <p>Feita com tomate, pepino, azeitonas e queijo feta.</p>
@@ -121,7 +161,7 @@
 
       <div class="col-md-4">
         <div class="card shadow">
-          <img src="img/carbonara.jpg" class="card-img-top">
+          <img src="img/Spaghetti alla Carbonara.jpg" class="card-img-top">
           <div class="card-body">
             <h5>Spaghetti alla Carbonara</h5>
             <p>Massa com ovos, queijo, bacon e pimenta.</p>
@@ -131,7 +171,7 @@
 
       <div class="col-md-4">
         <div class="card shadow">
-          <img src="img/pizza.jpg" class="card-img-top">
+          <img src="img/Pizza Italiana.jpg" class="card-img-top">
           <div class="card-body">
             <h5>Pizza Italiana</h5>
             <p>Clássica e famosa no mundo inteiro.</p>
