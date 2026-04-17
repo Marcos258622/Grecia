@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pratos Típicos - Grécia e Roma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      padding-top: 70px;
+    }
+
+    .hero {
+      background: url('img/comida.jpg') no-repeat center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .section-title {
+      border-left: 5px solid #0d6efd;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Europa</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Pratos Típicos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay text-center">
+    <h1>Pratos Típicos</h1>
+    <p>Sabores tradicionais da Grécia e de Roma</p>
+  </div>
+</section>
+
+<!-- GRÉCIA -->
+<section class="container py-5">
+  <h2 class="section-title">Pratos Típicos da Grécia</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/moussaka.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5>Moussaka</h5>
+          <p>Prato feito com berinjela, carne moída e molho branco.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/souvlaki.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5>Souvlaki</h5>
+          <p>Espetinhos de carne grelhada, muito populares no país.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow">
+        <img src="img/greek-salad.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5>Salada Grega</h5>
+          <p>Feita com tomate, pepino, azeitonas e queijo feta.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ROMA / ITÁLIA -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="section-title">Pratos Típicos de Roma (Itália)</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="img/carbonara.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Spaghetti alla Carbonara</h5>
+            <p>Massa com ovos, queijo, bacon e pimenta.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="img/pizza.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Pizza Italiana</h5>
+            <p>Clássica e famosa no mundo inteiro.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="img/lasanha.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Lasanha</h5>
+            <p>Camadas de massa com carne, molho e queijo.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXTRA -->
+<section class="container py-5">
+  <h2 class="section-title">Cultura Gastronômica</h2>
+  <p>
+    A culinária da Grécia e da Itália é conhecida mundialmente por seus sabores,
+    ingredientes frescos e tradições. Esses pratos fazem parte da cultura e são
+    muito apreciados por turistas do mundo todo.
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-primary text-white text-center py-3">
+  <p>Pratos Típicos © 2026</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
