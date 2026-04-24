@@ -11,5 +11,5 @@ Galeria de imagens
 Design responsivo para dispositivos móveis
 🛠️ Tecnologias utilizadas
 HTML5
-CSS3
+CSS
 Frameworks como Bootstrap
